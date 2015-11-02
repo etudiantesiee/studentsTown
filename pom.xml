@@ -32,6 +32,21 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
+	<!-- Configuration des dépôts cibles pour le déploiement des artefactsl -->
+	<distributionManagement>
+		<snapshotRepository>
+			<id>etudiant-vm</id>
+			<name>etudiant-vm-snapshots</name>
+			<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+		<repository>
+			<id>etudiant-vm</id>
+			<name>etudiant-vm-releases</name>
+			<url>http://localhost:8081/artifactory/libs-release-local</url>
+		</repository>
+	</distributionManagement>
+	
 
 	<build>
 		<plugins>
