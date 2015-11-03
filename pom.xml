@@ -32,7 +32,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+
 	<!-- Configuration des dépôts cibles pour le déploiement des artefactsl -->
 	<distributionManagement>
 		<snapshotRepository>
@@ -46,10 +46,15 @@
 			<url>http://localhost:8081/artifactory/libs-release-local</url>
 		</repository>
 	</distributionManagement>
-	
+
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>2.4</version>
+			</plugin>
 			<!-- Compiler -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
