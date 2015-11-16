@@ -78,10 +78,10 @@ public class AppartementFactory {
 		Etudiant amaury = new Etudiant("Amaury");
 		
 		
-		Piece zachPiece = new Piece(-400,200,200,200,zacharie);
-		Piece antoPiece = new Piece(-200,200,200,200,antony);
-		Piece helPiece = new Piece(-400,0,200,200,helene);
-		Piece amauPiece = new Piece(-200,0,200,200,amaury);
+		Piece zachPiece = new Piece(1200,300,200,200,zacharie);
+		Piece antoPiece = new Piece(1400,300,200,200,antony);
+		Piece helPiece = new Piece(1200,500,200,200,helene);
+		Piece amauPiece = new Piece(1400,500,200,200,amaury);
 		
 		Appartement appart = new Appartement();
 		appart.addPiece(zachPiece);
