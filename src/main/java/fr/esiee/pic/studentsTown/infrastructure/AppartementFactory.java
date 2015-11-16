@@ -102,9 +102,12 @@ public class AppartementFactory {
 		Etudiant tomtom = new Etudiant("Thomas L");
 		Etudiant jar = new Etudiant("Jardin");
 		
-		Piece nicoPiece = new Piece(100, 400, 300, 150, nico);
-		Piece tomtomPiece = new Piece(100,550,300,150, tomtom);
-		Piece jardinPiece = new Piece(400,400,300,300, jar);
+		int x = 500;
+		int y = 300;
+		
+		Piece nicoPiece = new Piece(x, y, 300, 150, nico);
+		Piece tomtomPiece = new Piece(x,y+150,300,150, tomtom);
+		Piece jardinPiece = new Piece(x+300,y,300,300, jar);
 		
 		Appartement lAppartDesBG = new Appartement();
 		lAppartDesBG.addPiece(nicoPiece);
