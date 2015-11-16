@@ -49,10 +49,10 @@ public class AppartementFactory {
 		Etudiant jean = new Etudiant("Zozo");
 		Etudiant tobo = new Etudiant("Tobo");
 
-		Piece guillaumePiece = new Piece(600, 100, 100, 100, guillaume);
-		Piece julienPiece = new Piece(600 + 100, 100, 100, 100, julien);
-		Piece jeanPiece = new Piece(600, 100 + 100, 100, 100, jean);
-		Piece toboPiece = new Piece(600 + 100, 100 + 100, 100, 100, tobo);
+		Piece guillaumePiece = new Piece(800, 0 , 150, 150, guillaume);
+		Piece julienPiece = new Piece(800 + 150, 0, 150, 150, julien);
+		Piece jeanPiece = new Piece(800,0 + 150, 150, 150, jean);
+		Piece toboPiece = new Piece(800 + 150, 0 + 150, 150, 150, tobo);
 		
 		Appartement appart = new Appartement();
 		appart.addPiece(guillaumePiece);
@@ -100,16 +100,22 @@ public class AppartementFactory {
 		
 		Etudiant nico = new Etudiant("Nicolas");
 		Etudiant tomtom = new Etudiant("Thomas L");
+		Etudiant jar = new Etudiant("Jardin");
 		
-		Piece nicoPiece = new Piece(0, 300, 200, 100, nico);
-		Piece tomtomPiece = new Piece(0,400,200,100, tomtom);
+		Piece nicoPiece = new Piece(100, 400, 300, 150, nico);
+		Piece tomtomPiece = new Piece(100,550,300,150, tomtom);
+		Piece jardinPiece = new Piece(400,400,300,300, jar);
 		
 		Appartement lAppartDesBG = new Appartement();
 		lAppartDesBG.addPiece(nicoPiece);
 		lAppartDesBG.addPiece(tomtomPiece);
 		
+		Appartement jardin = new Appartement();
+		jardin.addPiece(jardinPiece);
 		
+
 		appartOuest.add(lAppartDesBG);
+		appartOuest.add(jardin);
 		
 		return appartOuest;
 	}
