@@ -44,28 +44,30 @@ public class AppartementFactory {
 	private List<Appartement> recupererAppartementNord() {
 		List<Appartement> appartSude = new ArrayList<>();
 		
-		// Appartement de Landry et Christophe
-		Etudiant landry = new Etudiant("Landry");
-		Etudiant chr = new Etudiant("Chr");
-		Etudiant hpy = new Etudiant("Hpy");
-		
-		Piece ltiPiece = new Piece(100, 100, 200, 400, landry);
-		Piece christPiece = new Piece(100+200,100,200,400,chr);
-		Piece hapyPiece = new Piece(100+100, 100+400, 200, 100, hpy);
-		
-		Appartement landChristAppart = new Appartement();
-		landChristAppart.addPiece(ltiPiece);
-		landChristAppart.addPiece(christPiece);
-		landChristAppart.addPiece(hapyPiece);
-		
-		
-		appartSude.add(landChristAppart);
-		
 		return appartSude;
 	}
 	
 	private List<Appartement> recupererAppartementSud() {
 		List<Appartement> appartSud = new ArrayList<>();
+		
+		Etudiant chloe = new Etudiant("Chloé");
+		Etudiant remi = new Etudiant("Rémi");
+		Etudiant pierre = new Etudiant("Pierre");
+		Etudiant antoine = new Etudiant("Antoine");
+		
+		Piece chloePiece = new Piece(100,100,100,200,chloe);
+		Piece remiPiece = new Piece(200,100,100,200,remi);
+		Piece pierrePiece = new Piece(100,300,100,200,pierre);
+		Piece antoinePiece = new Piece(200,300,100,200,antoine);
+		
+		Appartement fifteenfifty = new Appartement();
+		fifteenfifty.addPiece(chloePiece);
+		fifteenfifty.addPiece(remiPiece);
+		fifteenfifty.addPiece(pierrePiece);
+		fifteenfifty.addPiece(antoinePiece);
+		
+		appartSud.add(fifteenfifty);
+		
 		return appartSud;
 	}
 	
