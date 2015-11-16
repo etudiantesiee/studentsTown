@@ -72,13 +72,24 @@ public class AppartementFactory {
 	private List<Appartement> recupererAppartementEst() {
 		List<Appartement> appartEst = new ArrayList<>();
 		
-		Etudiant guillaume = new Etudiant("Guillaume");
-		Piece guilPiece = new Piece(100+200 + 200,100,200,400,guillaume);
+		Etudiant zacharie = new Etudiant("Zacharie");
+		Etudiant antony = new Etudiant("Antony");
+		Etudiant helene = new Etudiant("Helene");
+		Etudiant amaury = new Etudiant("Amaury");
 		
-		Appartement guilAppart = new Appartement();
-		guilAppart.addPiece(guilPiece);
 		
-		appartEst.add(guilAppart);
+		Piece zachPiece = new Piece(-400,200,200,200,zacharie);
+		Piece antoPiece = new Piece(-200,200,200,200,antony);
+		Piece helPiece = new Piece(-400,0,200,200,helene);
+		Piece amauPiece = new Piece(-200,0,200,200,amaury);
+		
+		Appartement appart = new Appartement();
+		appart.addPiece(zachPiece);
+		appart.addPiece(antoPiece);
+		appart.addPiece(helPiece);
+		appart.addPiece(amauPiece);
+		
+		appartEst.add(appart);
 		
 		return appartEst;
 	}
