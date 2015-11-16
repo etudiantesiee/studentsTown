@@ -85,6 +85,20 @@ public class AppartementFactory {
 	
 	private List<Appartement> recupererAppartementOuest() {
 		List<Appartement> appartOuest = new ArrayList<>();
+		
+		Etudiant nico = new Etudiant("Nicolas");
+		Etudiant tomtom = new Etudiant("Thomas L");
+		
+		Piece nicoPiece = new Piece(100, 100, 200, 400, nico);
+		Piece tomtomPiece = new Piece(100+200,100,200,400, tomtom);
+		
+		Appartement lAppartDesBG = new Appartement();
+		lAppartDesBG.addPiece(nicoPiece);
+		lAppartDesBG.addPiece(tomtomPiece);
+		
+		
+		appartOuest.add(lAppartDesBG);
+		
 		return appartOuest;
 	}
 
