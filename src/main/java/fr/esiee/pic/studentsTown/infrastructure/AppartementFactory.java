@@ -42,26 +42,27 @@ public class AppartementFactory {
 	}
 	
 	private List<Appartement> recupererAppartementNord() {
-		List<Appartement> appartSude = new ArrayList<>();
+		List<Appartement> appartNord = new ArrayList<>();
 		
-		// Appartement de Landry et Christophe
-		Etudiant landry = new Etudiant("Landry");
-		Etudiant chr = new Etudiant("Chr");
-		Etudiant hpy = new Etudiant("Hpy");
+		Etudiant guillaume = new Etudiant("Gui");
+		Etudiant julien = new Etudiant("Ju");
+		Etudiant jean = new Etudiant("Zozo");
+		Etudiant tobo = new Etudiant("Tobo");
+
+		Piece guillaumePiece = new Piece(300, 100, 100, 100, guillaume);
+		Piece julienPiece = new Piece(300 + 100, 100, 100, 100, julien);
+		Piece jeanPiece = new Piece(300, 100 + 100, 100, 100, jean);
+		Piece toboPiece = new Piece(300 + 100, 100 + 100, 100, 100, tobo);
 		
-		Piece ltiPiece = new Piece(100, 100, 200, 400, landry);
-		Piece christPiece = new Piece(100+200,100,200,400,chr);
-		Piece hapyPiece = new Piece(100+100, 100+400, 200, 100, hpy);
+		Appartement appart = new Appartement();
+		appart.addPiece(guillaumePiece);
+		appart.addPiece(julienPiece);
+		appart.addPiece(jeanPiece);
+		appart.addPiece(toboPiece);
 		
-		Appartement landChristAppart = new Appartement();
-		landChristAppart.addPiece(ltiPiece);
-		landChristAppart.addPiece(christPiece);
-		landChristAppart.addPiece(hapyPiece);
+		appartNord.add(appart);
 		
-		
-		appartSude.add(landChristAppart);
-		
-		return appartSude;
+		return appartNord;
 	}
 	
 	private List<Appartement> recupererAppartementSud() {
