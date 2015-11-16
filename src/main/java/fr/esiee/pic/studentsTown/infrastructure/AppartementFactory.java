@@ -49,10 +49,10 @@ public class AppartementFactory {
 		Etudiant jean = new Etudiant("Zozo");
 		Etudiant tobo = new Etudiant("Tobo");
 
-		Piece guillaumePiece = new Piece(800, 100, 150, 150, guillaume);
-		Piece julienPiece = new Piece(800 + 150, 100, 150, 150, julien);
-		Piece jeanPiece = new Piece(800, 100 + 150, 150, 150, jean);
-		Piece toboPiece = new Piece(800 + 150, 100 + 150, 150, 150, tobo);
+		Piece guillaumePiece = new Piece(800, 0 , 150, 150, guillaume);
+		Piece julienPiece = new Piece(800 + 150, 0, 150, 150, julien);
+		Piece jeanPiece = new Piece(800,0 + 150, 150, 150, jean);
+		Piece toboPiece = new Piece(800 + 150, 0 + 150, 150, 150, tobo);
 		
 		Appartement appart = new Appartement();
 		appart.addPiece(guillaumePiece);
