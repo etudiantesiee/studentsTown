@@ -67,6 +67,27 @@ public class AppartementFactory {
 	
 	private List<Appartement> recupererAppartementSud() {
 		List<Appartement> appartSud = new ArrayList<>();
+		
+		Etudiant chloe = new Etudiant("Chloé");
+		Etudiant remi = new Etudiant("Rémi");
+		Etudiant pierre = new Etudiant("Pierre");
+		Etudiant antoine = new Etudiant("Antoine");
+		
+		int xPos;
+		
+		Piece chloePiece = new Piece(800,700,150,150,chloe);
+		Piece remiPiece = new Piece(950,700,150,150,remi);
+		Piece pierrePiece = new Piece(800,850,150,150,pierre);
+		Piece antoinePiece = new Piece(950,850,150,150,antoine);
+		
+		Appartement fifteenfifty = new Appartement();
+		fifteenfifty.addPiece(chloePiece);
+		fifteenfifty.addPiece(remiPiece);
+		fifteenfifty.addPiece(pierrePiece);
+		fifteenfifty.addPiece(antoinePiece);
+		
+		appartSud.add(fifteenfifty);
+		
 		return appartSud;
 	}
 	
@@ -102,9 +123,12 @@ public class AppartementFactory {
 		Etudiant tomtom = new Etudiant("Thomas L");
 		Etudiant jar = new Etudiant("Jardin");
 		
-		Piece nicoPiece = new Piece(100, 400, 300, 150, nico);
-		Piece tomtomPiece = new Piece(100,550,300,150, tomtom);
-		Piece jardinPiece = new Piece(400,400,300,300, jar);
+		int x = 500;
+		int y = 300;
+		
+		Piece nicoPiece = new Piece(x, y, 300, 150, nico);
+		Piece tomtomPiece = new Piece(x,y+150,300,150, tomtom);
+		Piece jardinPiece = new Piece(x+300,y,300,300, jar);
 		
 		Appartement lAppartDesBG = new Appartement();
 		lAppartDesBG.addPiece(nicoPiece);
