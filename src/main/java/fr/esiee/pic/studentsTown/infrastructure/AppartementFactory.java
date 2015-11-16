@@ -49,10 +49,10 @@ public class AppartementFactory {
 		Etudiant jean = new Etudiant("Zozo");
 		Etudiant tobo = new Etudiant("Tobo");
 
-		Piece guillaumePiece = new Piece(300, 100, 100, 100, guillaume);
-		Piece julienPiece = new Piece(300 + 100, 100, 100, 100, julien);
-		Piece jeanPiece = new Piece(300, 100 + 100, 100, 100, jean);
-		Piece toboPiece = new Piece(300 + 100, 100 + 100, 100, 100, tobo);
+		Piece guillaumePiece = new Piece(600, 100, 100, 100, guillaume);
+		Piece julienPiece = new Piece(600 + 100, 100, 100, 100, julien);
+		Piece jeanPiece = new Piece(600, 100 + 100, 100, 100, jean);
+		Piece toboPiece = new Piece(600 + 100, 100 + 100, 100, 100, tobo);
 		
 		Appartement appart = new Appartement();
 		appart.addPiece(guillaumePiece);
@@ -79,10 +79,10 @@ public class AppartementFactory {
 		Etudiant amaury = new Etudiant("Amaury");
 		
 		
-		Piece zachPiece = new Piece(-400,200,200,200,zacharie);
-		Piece antoPiece = new Piece(-200,200,200,200,antony);
-		Piece helPiece = new Piece(-400,0,200,200,helene);
-		Piece amauPiece = new Piece(-200,0,200,200,amaury);
+		Piece zachPiece = new Piece(1200,300,200,200,zacharie);
+		Piece antoPiece = new Piece(1400,300,200,200,antony);
+		Piece helPiece = new Piece(1200,500,200,200,helene);
+		Piece amauPiece = new Piece(1400,500,200,200,amaury);
 		
 		Appartement appart = new Appartement();
 		appart.addPiece(zachPiece);
