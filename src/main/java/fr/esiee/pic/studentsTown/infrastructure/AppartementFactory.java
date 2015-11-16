@@ -44,23 +44,6 @@ public class AppartementFactory {
 	private List<Appartement> recupererAppartementNord() {
 		List<Appartement> appartSude = new ArrayList<>();
 		
-		// Appartement de Landry et Christophe
-		Etudiant landry = new Etudiant("Landry");
-		Etudiant chr = new Etudiant("Chr");
-		Etudiant hpy = new Etudiant("Hpy");
-		
-		Piece ltiPiece = new Piece(100, 100, 200, 400, landry);
-		Piece christPiece = new Piece(100+200,100,200,400,chr);
-		Piece hapyPiece = new Piece(100+100, 100+400, 200, 100, hpy);
-		
-		Appartement landChristAppart = new Appartement();
-		landChristAppart.addPiece(ltiPiece);
-		landChristAppart.addPiece(christPiece);
-		landChristAppart.addPiece(hapyPiece);
-		
-		
-		appartSude.add(landChristAppart);
-		
 		return appartSude;
 	}
 	
@@ -89,8 +72,8 @@ public class AppartementFactory {
 		Etudiant nico = new Etudiant("Nicolas");
 		Etudiant tomtom = new Etudiant("Thomas L");
 		
-		Piece nicoPiece = new Piece(100, 100, 200, 400, nico);
-		Piece tomtomPiece = new Piece(100+200,100,200,400, tomtom);
+		Piece nicoPiece = new Piece(300, 300, 200, 100, nico);
+		Piece tomtomPiece = new Piece(300,400,200,100, tomtom);
 		
 		Appartement lAppartDesBG = new Appartement();
 		lAppartDesBG.addPiece(nicoPiece);
